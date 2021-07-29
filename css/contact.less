@@ -1,0 +1,149 @@
+// main: style.less
+
+.contact__inner{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.contact__left{
+    width: 60%;
+}
+
+.contact__right{
+    width: 40%;
+}
+
+.contact__title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: all .6s ease 0s;
+}
+
+.contact__title.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.textarea{
+    color: #c6c4c9;
+    border: 1px solid #e5e5e5;
+    resize: none;
+    height: 25px;
+    width: 442px;
+    padding-top: 12px;
+    padding-left: 18px;
+}
+
+textarea::placeholder{
+    color: #acabb1;
+}
+
+.textarea__last{
+    height: 150px;
+}
+
+.text__area--name{
+    margin-bottom: 15px;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: all .6s ease 0.2s;
+}
+
+.text__area--name.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.text__area--email{
+    margin-bottom: 15px;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: all .6s ease 0.4s;
+}
+
+.text__area--email.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.text__area--subject{
+    margin-bottom: 15px;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: all .6s ease 0.6s;
+}
+
+.text__area--subject.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.text__area--message{
+    margin-bottom: 15px;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: all .6s ease 0.8s;
+}
+
+.text__area--message.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.contact__clients{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    transform: translateX(-140px);
+    opacity: 0;
+    transition: all .6s ease 0.6s;
+}
+
+.contact__clients.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.clients{
+    width: 50%;
+    padding-bottom: 45px;
+}
+
+.clients__net{
+    padding-bottom: 25px;
+}
+
+.contact__btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #11e2d3;
+    border: 2px solid #11e2d3;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 32px;
+    transition: .3s;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: all .6s ease;
+}
+
+.contact__btn.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.contact__btn:hover{
+    background-color: #11e2d3;
+    color: #fff;
+}
+
+.contact__btn:focus{
+    outline: none;
+}

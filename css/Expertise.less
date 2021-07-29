@@ -1,0 +1,142 @@
+// main: style.less
+
+.expertise{
+    padding-top: 70px;
+}
+
+
+.expertise__inner{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.expertise__title{
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #444;
+    padding-bottom: 15px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.expertise__title.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.expertise__txt{
+    font-size: 13px;
+    color: #444;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.expertise__txt.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.expertise__txt:after{
+    content: "";
+    background-color: #333;
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+
+.block__inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expertise__block{
+    text-align: center;
+    width: 33%;  
+    
+}
+
+.expertise__block.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.block__image{
+    padding-bottom: 35px;
+    padding-top: 30px;
+}
+
+.block--second{
+    border-left: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.block--first{
+    border-bottom: 1px solid #ebebeb;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.block--second{
+    transform: translateY(80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.block--third{
+    border-bottom: 1px solid #ebebeb;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.block--four{
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.block--five{
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.block--six{
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+}
+
+
+.block__title{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 15px;
+
+}
+
+.block__txt{
+    color: #333;
+    padding-left: 35px;
+    padding-right: 35px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 45px;
+    text-align: left;
+}
